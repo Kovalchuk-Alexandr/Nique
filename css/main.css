@@ -1,0 +1,27 @@
+/* Шрифты */
+@import './../fonts/bitter-rose/stylesheet.css';
+@import './../fonts/cabinet-grotesk/stylesheet.css';
+@import './../fonts/chillax/css/chillax.css';
+
+/* =============  Base ================= */
+@import './base/reset.css';
+@import './base/vars.css';
+
+@import './base/base.css';
+@import './base/buttons.css';
+@import './base/mobile-nav-button.css';
+@import './base/mobile-nav.css';
+
+
+/* =============  Blocks ================= */
+@import './blocks/header.css';
+@import './blocks/nav.css';
+@import './blocks/main.css';
+@import './blocks/section.css';
+@import './blocks/item.css';
+@import './blocks/footer.css';
+
+/* =============  Media ================= */
+@import './base/media.css';
+
+

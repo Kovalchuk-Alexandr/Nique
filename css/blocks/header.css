@@ -1,0 +1,85 @@
+.header {
+    min-height: min(1000px,  100vh) ;
+    padding-block: 64px  62px;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    
+    background-color: var(--background-default);
+    /* background-image: url('./../../img/header/header-bg.jpg'); */
+
+    /* Для Rethina*/
+    background-image: image-set(
+        url('./../../img/header/header-bg.jpg') 1x,
+        url('./../../img/header/header-bg@2x.jpg') 2x
+    );
+
+    background-position: center center; /* x y */
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.header-logo {
+    font-family: var(--font-family);
+    font-weight: 500;
+    font-size: 32px;
+    line-height: 90%;
+    color: var(--text-default);
+}
+
+.header-content {
+    max-width: 705px;
+    padding-inline: 20px;
+
+    font-family: var(--font-family);
+    font-weight: 400;
+    line-height: 160%;
+    text-align: center;
+    color: var(--text-default);
+}
+
+.header-content p {
+    max-width: 620px;
+    margin: 0 auto;
+    padding-inline: 10px;
+
+     font-size: 24px;
+     font-size: clamp(1rem, 0.765rem + 1.18vw, 1.5rem);
+}
+
+.header-content p + p  {margin-top: 1em;}
+
+.header-title {
+    margin-bottom: 32px;
+    font-family: var(--second-family);
+    font-weight: 400;
+    font-size: 80px;
+    font-size: clamp(2.5rem, 1.591rem + 4.55vw, 5rem);
+    line-height: 90%;
+    color: var(--text-primary);
+}
+
+.header-subtitle {
+    display: block;
+    font-family: var(--font-family);
+    font-weight: 500;
+    font-size: 160px;
+    font-size: clamp(3.75rem, 1.477rem + 11.36vw, 10rem);
+    line-height: 90%;
+    color: var(--text-default);
+}
+
+.header-desc {
+    
+}
+
+.header-nav {
+}
+
+@media (max-width: 580px) {
+    .header {
+        padding-block: 30px;
+    }
+}
